@@ -1,0 +1,285 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #004080;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.logo span {
+  margin-left: 8px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.nav-links a:hover {
+  color: #ffa500;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 75vh;
+  background: url('kids-bg.jpg') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  padding: 0 20px;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+.hero {
+  background-image: url('haad.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh; /* example: section ko visible height de */}
+
+.about-image .img-placeholder {
+  background-image: url('haad2.jpeg');
+  background-size: contain;   /* ya cover depending layout */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 360px;               /* desired width */
+  height: 360px;              /* square area for QR code */
+}
+
+ .about-image img {
+  display: block;
+  max-width: 100%;
+  width: 360px;      /* ya 400px, ya 600px based on layout */
+  height: auto;      /* maintain aspect ratio */
+}
+
+
+.btn {
+  background: #ffa500;
+  padding: 14px 30px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: opacity .3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Section */
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+  color: #004080;
+}
+
+/* About */
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-image,
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.img-placeholder {
+  width: 100%;
+  height: 250px;
+  background: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Mission */
+.mission ul {
+  list-style: disc inside;
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Contact */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  background: #004080;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f4f4f4;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive */
+@media(max-width:768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+/* Contact Info Layout */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto 40px;
+}
+.info-block {
+  flex: 1;
+  min-width: 250px;
+}
+.info-block h3 {
+  color: #004080;
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+.info-block p a {
+  color: #004080;
+  text-decoration: none;
+}
+.info-block p a:hover {
+  text-decoration: underline;
+}
+
+/* Social links list */
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+}
+.social-links li a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+.social-links li a:hover {
+  color: #ffa500;
+}
+
+/* Map placeholder styling */
+.map-placeholder {
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 200px;
+  color: #666;
+  font-size: 1rem;
+}
+
+/* Footer CTA button */
+.footer-cta {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer-cta .btn {
+  padding: 12px 25px;
+}
